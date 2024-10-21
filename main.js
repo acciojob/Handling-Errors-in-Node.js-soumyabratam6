@@ -18,6 +18,7 @@ function printFileContents(filePath) {
       console.log(data);
     }
   });
-}t
+}
+
 const filePath = process.argv[2]; // Get the file path from the command-line argument
 printFileContents(filePath);
