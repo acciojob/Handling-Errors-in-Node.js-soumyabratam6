@@ -5,8 +5,6 @@ function printFileContents(filePath) {
     console.error("Error: Please provide a valid file path as a command-line argument.");
     return;
   }
-
-  // Use fs.readFile to read the file contents asynchronously
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
       if (err.code === 'ENOENT') {
@@ -19,6 +17,6 @@ function printFileContents(filePath) {
     }
   });
 }
-
-const filePath = process.argv[2]; // Get the file path from the command-line argument
+// const filePath = "./output.txt"
+const filePath = process.argv[2];
 printFileContents(filePath);
