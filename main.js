@@ -17,6 +17,6 @@ function printFileContents(filePath) {
     }
   });
 }
-// const filePath = "./output.txt"
-const filePath = process.argv[2];
+const filePath = "./output.txt"
+//const filePath = process.argv[2];
 printFileContents(filePath);
