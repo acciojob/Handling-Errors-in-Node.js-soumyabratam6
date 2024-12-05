@@ -3,7 +3,7 @@ const fs = require('fs');
 function printFileContents(filePath) {
   if (!filePath) {
     console.error("Error: Please provide a valid file path as a command-line argument.");
-    return;
+    return
   }
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
